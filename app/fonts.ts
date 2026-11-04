@@ -1,7 +1,6 @@
-// Self-hosted faces (owner decision D2): the pinned @fontsource packages are
-// bundled into the export, so no font loads from elsewhere. The design system
-// writes this file from the brand's type pairing; only faces the template pins
-// may be imported here (tests/stack_policy.py).
-import "@fontsource-variable/space-grotesk";
+// Self-hosted faces from the design system (brand/BRAND.md, Type): written by
+// trusted code from the brand's pairing; only the template's pinned faces.
+import "@fontsource-variable/fraunces";
 import "@fontsource-variable/ibm-plex-sans";
-import "@fontsource-variable/jetbrains-mono";
+import "@fontsource/ibm-plex-mono/400.css";
+import "@fontsource/ibm-plex-mono/600.css";
