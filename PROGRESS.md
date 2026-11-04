@@ -38,3 +38,4 @@ Judged by the evaluator, on the rendered product: every criterion (design, origi
 
 - `4099e00def1b` on `feature/issue-2-home`: docs: product requirements, architecture and design system
 - `048977d361eb` on `feature/issue-2-home`: docs: brief, plan, decisions, handoff and run record
+- `a2b42f71d4a0` on `feature/issue-2-home`: docs(crew): the plan, progress and the agents' map
