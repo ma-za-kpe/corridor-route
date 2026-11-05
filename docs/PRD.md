@@ -36,7 +36,7 @@ Choosing between two candidate sites and needs to factor corridor logistics risk
 
 ## Alternatives today
 
-- Corridor trip-cost and capacity estimator (chosen): enter a route (Djibouti port to an Ethiopian destination), tanker capacity, fuel price and expected disruption; get cost per litre, cost per trip, and a disruption-risk-adjusted delivery window; save the estimate on the device. It wins for P1 (F2) 
+- Corridor trip-cost and capacity estimator (chosen): enter a route (Djibouti port to an Ethiopian destination), tanker capacity, fuel price and expected disruption; get cost per litre, cost per trip, and a disruption-risk-adjusted delivery window; save the estimate on the device. It wins for P1 (F2)
 
 ## Value proposition
 
