@@ -1,0 +1,100 @@
+{
+  "contracts": {
+    "task-home": {
+      "checks": [
+        "npm run build (a pinned build, no network)",
+        "python tests/site_view.py && python -m unittest discover -s tests (the frozen tests)",
+        "node tests/browser/qa.mjs (phone and desktop, axe, the quality floors)"
+      ],
+      "evaluator": {
+        "criteria": [
+          "design",
+          "originality",
+          "depth",
+          "craft",
+          "functionality"
+        ],
+        "hiddenCategories": 6,
+        "threshold": 7
+      },
+      "features": [
+        {
+          "done": "P1 enters route distance, tanker capacity, fuel price and disruption factor; sees cost per litre, cost per trip and a disruption-adjusted delivery window; saves the estimate on the device. (on `index`, working offline)",
+          "id": "M1",
+          "title": "Corridor trip-cost estimate"
+        },
+        {
+          "done": "P1 opens two saved estimates side by side, with the difference in cost per litre and delivery window highlighted. (on `index`, working offline)",
+          "id": "M2",
+          "title": "Saved estimate comparison"
+        },
+        {
+          "done": "P2 adjusts the disruption factor from 1.0 to 2.0 and watches the delivered cost per litre and delivery window change, to decide whether to buffer stock. (on `index`, working offline)",
+          "id": "M3",
+          "title": "Disruption scenario slider"
+        },
+        {
+          "done": "P3 enters two candidate site distances from the corridor and sees the fuel logistics cost difference per litre for each, to factor into the site decision. (on `index`, working offline)",
+          "id": "M4",
+          "title": "Site logistics cost comparison"
+        },
+        {
+          "done": "P1 browses saved estimates on the device and exports a plain-text summary to share with a customer or colleague. (on `index`, working offline)",
+          "id": "M5",
+          "title": "Estimate history and export"
+        }
+      ],
+      "task": "task-home",
+      "title": "Design direction: home page and shared style"
+    }
+  },
+  "features": [
+    {
+      "id": "M1",
+      "notes": "Built on the home page: its own page is beyond the page budget.",
+      "outcome": "P1 enters route distance, tanker capacity, fuel price and disruption factor; sees cost per litre, cost per trip and a disruption-adjusted delivery window; saves the estimate on the device.",
+      "page": "index",
+      "passes": false,
+      "status": "in-progress",
+      "title": "Corridor trip-cost estimate"
+    },
+    {
+      "id": "M2",
+      "notes": "Built on the home page: its own page is beyond the page budget.",
+      "outcome": "P1 opens two saved estimates side by side, with the difference in cost per litre and delivery window highlighted.",
+      "page": "index",
+      "passes": false,
+      "status": "in-progress",
+      "title": "Saved estimate comparison"
+    },
+    {
+      "id": "M3",
+      "notes": "Built on the home page: its own page is beyond the page budget.",
+      "outcome": "P2 adjusts the disruption factor from 1.0 to 2.0 and watches the delivered cost per litre and delivery window change, to decide whether to buffer stock.",
+      "page": "index",
+      "passes": false,
+      "status": "in-progress",
+      "title": "Disruption scenario slider"
+    },
+    {
+      "id": "M4",
+      "notes": "Built on the home page: its own page is beyond the page budget.",
+      "outcome": "P3 enters two candidate site distances from the corridor and sees the fuel logistics cost difference per litre for each, to factor into the site decision.",
+      "page": "index",
+      "passes": false,
+      "status": "in-progress",
+      "title": "Site logistics cost comparison"
+    },
+    {
+      "id": "M5",
+      "notes": "Built on the home page: its own page is beyond the page budget.",
+      "outcome": "P1 browses saved estimates on the device and exports a plain-text summary to share with a customer or colleague.",
+      "page": "index",
+      "passes": false,
+      "status": "in-progress",
+      "title": "Estimate history and export"
+    }
+  ],
+  "rules": "Agents change a feature's status and notes only, with update_plan; passes is set by trusted checks once the feature's task merged on green CI and a passing evaluation.",
+  "schema": "crew.plan@1"
+}
